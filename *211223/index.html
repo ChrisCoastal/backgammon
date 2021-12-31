@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./style.css" />
+    <script defer type="module" src="./script.js"></script>
+    <title>Backgammon</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="play-area">
+        <section class="title">
+          <h1 class="main-title">Backgammon</h1>
+          <button class="btn btn-start-game btn-new-game">New Game</button>
+        </section>
+        <section class="nav">
+          <!-- change some to button -->
+          <ul>
+            <li> <a href="" class="btn btn-reset-game btn-new-game">New Game</a></li>
+            <li> <a href="" class="settings">Match Settings</a></li>
+            <li> <a href="" class="settings">Board Colours</a></li>
+            <li> <a href="" class="settings">Pip Count</a></li>
+          </ul>
+        </section>
+        <section class="backgammon-board">
+          <div class="board-surface grid-13-cols">
+            <div class="bar"></div>
+            <div class="doubling-dice">
+              <!-- <div class="doubling-dice doubling-dice--0-controls"> -->
+              <span>64</span>
+            </div>
+
+            <!-- <div class="blot-container blot-container-0 blot-container--bottom"></div> -->
+            <div class="blot-container blot-container-0 blot-container--bear-1"></div>
+            <div class="blot-container blot-container-1 blot-container--bottom"></div>
+            <div class="blot-container blot-container-2 blot-container--bottom"></div>
+            <div class="blot-container blot-container-3 blot-container--bottom"></div>
+            <div class="blot-container blot-container-4 blot-container--bottom"></div>
+            <div class="blot-container blot-container-5 blot-container--bottom"></div>
+            <div class="blot-container blot-container-6 blot-container--bottom"></div>
+            <div class="blot-container blot-container-7 blot-container--bottom"></div>
+            <div class="blot-container blot-container-8 blot-container--bottom"></div>
+            <div class="blot-container blot-container-9 blot-container--bottom"></div>
+            <div class="blot-container blot-container-10 blot-container--bottom"></div>
+            <div class="blot-container blot-container-11 blot-container--bottom"></div>
+            <div class="blot-container blot-container-12 blot-container--bottom"></div>
+
+            <div class="blot-container blot-container-13 blot-container--top"></div>
+            <div class="blot-container blot-container-14 blot-container--top"></div>
+            <!-- <div class="blot-container blot-container-15 blot-container--top"><div class="blot blot-1"></div></div> -->
+            <div class="blot-container blot-container-15 blot-container--top"></div>
+            <div class="blot-container blot-container-16 blot-container--top"></div>
+            <div class="blot-container blot-container-17 blot-container--top"></div>
+            <div class="blot-container blot-container-18 blot-container--top"></div>
+            <div class="blot-container blot-container-19 blot-container--top"></div>
+            <div class="blot-container blot-container-20 blot-container--top"></div>
+            <div class="blot-container blot-container-21 blot-container--top"></div>
+            <div class="blot-container blot-container-22 blot-container--top"></div>
+            <div class="blot-container blot-container-23 blot-container--top"></div>
+            <div class="blot-container blot-container-24 blot-container--top"></div>
+            <div class="blot-container blot-container-25 blot-container--bear-0"></div>
+
+           
+            <div class="point point-13 point-down">13</div>
+            <div class="point point-14 point-down">14</div>
+            <div class="point point-15 point-down">15</div>
+            <div class="point point-16 point-down">16</div>
+            <div class="point point-17 point-down">17</div>
+            <div class="point point-18 point-down">18</div>
+            <div class="point point-12 point-up">12</div>
+            <div class="point point-11 point-up">11</div>
+            <div class="point point-10 point-up">10</div>
+            <div class="point point-9 point-up">9</div>
+            <div class="point point-8 point-up">8</div>
+            <div class="point point-7 point-up">7</div>
+
+
+            <div class="point point-19 point-down">19</div>
+            <div class="point point-20 point-down">20</div>
+            <div class="point point-21 point-down">21</div>
+            <div class="point point-22 point-down">22</div>
+            <div class="point point-23 point-down">23</div>
+            <div class="point point-24 point-down">24</div>
+            <div class="point point-6 point-up">6</div>
+            <div class="point point-5 point-up">5</div>
+            <div class="point point-4 point-up">4</div>
+            <div class="point point-3 point-up">3</div>
+            <div class="point point-2 point-up">2</div>
+            <div class="point point-1 point-up">1</div>
+            <!-- <div class="point point-0 bear-off">1</div> -->
+          </div>
+        </section>
+        <section class="player player-0" player-0">
+          <div class="player-display player-0-display">
+            <h2 class="player-name player-name-0">Player 1</h2>
+            <div class="dice-display dice-display--0">
+              <!-- <div class="dice dice-0A"><div class="dice-dot"></div></div> -->
+              <div class="dice dice-0A"></div>
+              <div class="dice dice-0B"></div>
+            </div>
+            <button class="btn btn-roll-dice btn-roll-dice--0">Roll</button>
+            <button class="btn btn-undo-move btn-undo-move--0">Undo Move</button>
+            <button class="btn btn-end-turn btn-end-turn--0">End Turn</button>
+            <p class="pip-count-display pip-count--0">Pip Count:</p>
+          </div>
+        </section>
+        <section class="player player-1">
+          <div class="player-display player-1-display">
+            <h2 class="player-name player-name-1">Player 2</h2>
+              <div class="dice-display dice-display--1">
+                <div class="dice dice-1A"></div>
+                <div class="dice dice-1B"></div>
+              </div>
+              <button class="btn btn-roll-dice btn-roll-dice--1">Roll</button>
+              <button class="btn btn-undo-move btn-undo-move--1">Undo Move</button>
+              <button class="btn btn-end-turn btn-end-turn--1">End Turn</button>
+              <p class="pip-count-display pip-count--1">Pip Count:</p>
+            </div>
+          </div>
+        </section>
+        
+          
+          <!-- modal would you like to start a new game or match -->
+
+      </div>
+    </main>
+  </body>
+</html>
