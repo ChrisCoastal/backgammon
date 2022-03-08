@@ -1,5 +1,5 @@
 # backgammon
-a backgammon app for 2 players
+a backgammon app for 2 players (currently a hot mess)
 
 Early stages of creating a backgammon application with basic/partial UI and logic.
 Gameplay and logic are still being sorted out and there are several bugs/conditions that need to be worked out.
